@@ -51,7 +51,7 @@
 						<img src="/images/brazafraza.png" alt="Favicon" id="mainImage">
 					</div>
 				</h1>
-				<p>Welcome to my site! My name is Brodie Frazier, an indie game developer specializing in design and production. This website is still under construction, but I'm working on some exciting projects! Check them out on my <a href="https://brodie-frazier.itch.io">itch.io page</a> for now!</p>
+				<p>Hey there! My name is Brodie Frazier, I'm an indie game developer. <br> I'm currently studying game design and production at at AIE in Melbourne, focusing on building my portfolio and expanding my skill set. I have a versatile design background with working design, sound, programming and a little bit of art. This website is still under construction, but I'm working on some exciting projects! Check them out on my <a href="https://brodie-frazier.itch.io">itch.io page</a> for now!</p>
 				<ul class="actions">
 					<li><a href="#one" class="button scrolly">Learn more</a></li>
 				</ul>
@@ -62,7 +62,7 @@
 		<section id="one" class="wrapper style2 spotlights">
 
 			<!-- Project 1 -->
-			<section>
+			<section class="project-section" data-bg-opacity="0.2" style="background-image: url('images/section1bg.png');">
 				<a href="https://basalt-formations.itch.io/sync-and-ecco" class="image" target="_blank">
 					<img src="images/pic04.jpg" alt="Project Image" data-position="center center" />
 				</a>
@@ -79,9 +79,9 @@
 			</section>
 
 			<!-- Project 2 -->
-			<section>
+			<section class="project-section" data-bg-opacity="0.2" style="background-image: url('images/section2bg.png');">
 				<a href="https://locstock.itch.io/no-strings-attached" class="image" target="_blank">
-					<img src="images/pic01.jpg" alt="Project Image" data-position="center center" />
+					<img src="images/pic01alt.png" alt="Project Image" data-position="center center" />
 				</a>
 				<div class="content">
 					<div class="inner">
@@ -97,8 +97,8 @@
 
 
 
-			<!-- Project 5 -->
-			<section>
+			<!-- Project 3 -->
+			<section class="project-section" data-bg-opacity="0.2" style="background-image: url('images/section3bg.png');">
 				<a href="https://brodie-frazier.itch.io/beeranged" class="image" target="_blank">
 					<img src="images/pic05.jpg" alt="Project Image" data-position="center center" />
 				</a>
@@ -114,7 +114,7 @@
 				</div>
 			</section>
 			<!-- Project 4 -->
-			<section>
+			<section class="project-section" data-bg-opacity="0.2" style="background-image: url('images/section4bg.png');">
 				<a href="https://brodie-frazier.itch.io/minds-isle" class="image" target="_blank">
 					<img src="images/pic02.jpg" alt="Project Image" data-position="center center" />
 				</a>
@@ -131,9 +131,9 @@
 			</section>
 
 			<!-- Project 5 -->
-			<section>
+			<section class="project-section" data-bg-opacity="0.2" style="background-image: url('images/section5bg.png');">
 				<a href="https://gaivaige.itch.io/final-hour" class="image" target="_blank">
-					<img src="images/pic03.jpg" alt="Project Image" data-position="center center" />
+					<img src="images/pic03.png" alt="Project Image" data-position="center center" />
 				</a>
 				<div class="content">
 					<div class="inner">
@@ -197,20 +197,24 @@
 			const mainImage = document.getElementById('mainImage');
 			const imageOptions = [
 				'/images/brazafrazagear5.png',
-				'/images/brazafrazaflamingo.png'  
+				'/images/brazafrazaflamingo.png'
 			];
 
 			mainImage.addEventListener('mouseenter', () => {
 				const randomImage = imageOptions[Math.floor(Math.random() * imageOptions.length)];
-				mainImage.dataset.originalSrc = mainImage.src; 
+				mainImage.dataset.originalSrc = mainImage.src;
 				mainImage.src = randomImage;
 			});
 
 			mainImage.addEventListener('mouseleave', () => {
-				mainImage.src = mainImage.dataset.originalSrc; 
+				mainImage.src = mainImage.dataset.originalSrc;
 			});
 		});
 	</script>
+
+
+	
+
 
 </body>
 </html>
