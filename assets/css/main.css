@@ -3917,4 +3917,19 @@ body {
 
 }
 
+.sprite-gallery {
+	display: flex;
+	gap: 10px;
+	justify-content: center; /* Centers images */
+	margin: 20px 0; /* Adds spacing around the images */
+}
+
+.sprite-image {
+	width: 100px; /* Set your preferred width */
+	height: auto;
+	border-radius: 5px;
+	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Adds a shadow for visual effect */
+}
+
+
 	
