@@ -3920,16 +3920,24 @@ body {
 .sprite-gallery {
 	display: flex;
 	gap: 10px;
-	justify-content: center; /* Centers images */
-	margin: 20px 0; /* Adds spacing around the images */
+	justify-content: center; 
+	margin: 20px 0; 
 }
 
 .sprite-image {
-	max-width: 100%; /* Prevents images from overflowing their container */
-	height: auto; /* Maintains aspect ratio */
-	object-fit: contain; /* Ensures the image is fully visible */
+	max-width: 100%; 
+	height: auto; 
+	object-fit: contain; 
 	border-radius: 5px;
-	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Adds a shadow for visual effect */
+	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+.sprite {
+	width: auto; 
+	height: auto; 
+	max-width: 100%;
+	max-height: 100%; 
+	display: block; 
 }
 
 
