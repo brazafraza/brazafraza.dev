@@ -3932,6 +3932,29 @@ body {
 	display: block; 
 }
 
+<style >
+.sprite-container {
+	display: inline-block;
+	width: 150px; 
+	height: 150px; 
+	margin: 10px; 
+	overflow: hidden; 
+}
+
+.sprite-container img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover; 
+	display: block;
+}
+
+.sprite-grid {
+	display: flex;
+	flex-wrap: wrap; 
+	justify-content: center; 
+	gap: 20px;
+
+</style >
 
 
 	
