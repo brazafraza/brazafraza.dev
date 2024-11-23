@@ -3933,17 +3933,16 @@ body {
 }
 
 .sprite-container {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 50px;
-	height: 50px;
-	margin: 10px;
-	overflow: hidden;
-	background: #f0f0f0;
+	display: flex; 
+	justify-content: center; 
+	align-items: center; 
+	width: 50px; 
+	height: 50px; 
+	margin: 10px; 
+	overflow: hidden; 
+	background: #f0f0f0; 
 	border-radius: 8px;
-	background: lightgrey;
-	border: 1px dashed red;
+
 }
 
 .sprite-container img {
