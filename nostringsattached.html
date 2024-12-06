@@ -98,18 +98,21 @@
 
 
                     <h3> Production role</h3>
-                    Initially, I was only focusing solely on leading the design but not long into the project I had to take a step up and take on the producer role too. I had no experience in a production role in a team before so this was my first time managing a team. I used the project management software Hack n Plan to outline and track the team's tasks. Each morning we would have a morning stand-up where I recorded what people had been working on and what everybody would be working on in a shared document. This ensured we all had a more informal way to communicate tasks progression beyond Hack n Plan. The project management worked out well and by the end of each Alpha, Beta and Gold, most of the assigned tasks were completed. Tasks that were incomplete were communicated clearly and reassigned to different stages or people in the team.<br /><br />
+                    Initially, I was only focusing solely on leading the design but not long into the project I had to take a step up and take on the producer role too. I had no experience in a production role before so this was my first time managing a team. I used the project management software Hack n Plan to outline and track the team's tasks. Each morning we would have a morning stand-up where I recorded what people had been working on and what everybody would be working on in a shared document. This ensured we all had a more informal way to communicate tasks progression beyond Hack n Plan. The project management worked out well and by the end of each Alpha, Beta and Gold, most of the assigned tasks were completed. Tasks that were incomplete were communicated clearly and reassigned to different stages or people in the team.<br /><br />
 
                     Here are some example screenshots of how the asset list and scope timeline were set out:
                     <br /><img src="images/NoStringsAttached/Scope1.png" alt="1" data-position="center center" style="width:1073px;height:458px;"><br /> Day to day stand up snippet<br />
+
+                    <br /><img src="images/NoStringsAttached/Scope4.png" alt="1" data-position="center center" style="width:900px;height:474px;"><br /> Hack n Plan snippet 1<br />
+                    <br /><img src="images/NoStringsAttached/Scope5.png" alt="1" data-position="center center" style="width:900px;height:474px;"><br /> Hack n Plan snippet 2<br />
                     <br /><img src="images/NoStringsAttached/Scope2.png" alt="1" data-position="center center" style="width:1158px;height:474px;"><br /> Alpha asset list (Hour delegation)<br />
                     <br /><img src="images/NoStringsAttached/Scope3.png" alt="1" data-position="center center" style="width:1073px;height:458px;"><br />
                     Arist asset list
                     <br />
                     <br />   <h3> Combat system iteration</h3>
-                    Our original combat system leaned heavily on complexity having multiple stances, a manual stamina system and a form of weaponry. After feedback from an industry pitch, we realised a core identity issue in our game, we didn’t know if we were making a serious complex fighting game or a funny silly beat-up party game. As this was still early in pre-production, we had a team vote and the majority voted for a pivot. We stuck to one side and embraced the slapstick chaos party game.
+                    Our original combat system leaned heavily on complexity having multiple stances, a manual stamina system and a form of weaponry. After feedback from our industry pitch, we realised a core identity issue in our game, we didn’t know if we were making a serious complex fighting game or a funny silly beat-up party game. As this was still early in pre-production, we had a team vote and the majority voted for a pivot. We stuck to one side and embraced the slapstick chaos party game.
                     <br /><br />
-                    Here’s a quick overview of how the old complex combat system worked:<br />
+                    Here’s a quick overview of how the old combat system worked (complex):<br />
                     <ul>
                         <li>The player had strings attached to their head and both arms.</li>
                         <li>The player’s head string would only become reachable after both arm strings were gone.</li>
@@ -157,16 +160,15 @@
 
 
                     </ul>
-                    This new system aligned more with the goofy tone our game naturally had from its theme. It was hard for me to change the tension (stamina) system as it was something I came up with completely by myself and was proud of. I bit the bullet, however, and we reworked the entire thing into a health bar. Pivoting had other benefits though! The flail attack was an emergent feature from the change, as it naturally came about from the arms being loose and swung around during testing, so we made it into a mechanic!
+                    This new system aligned more with the goofy tone our game naturally had from its theme. It was hard for me to change the tension (stamina) system as it was something I came up with completely by myself and was proud of. I bit the bullet however and we reworked the entire thing into a health mechanic. Pivoting had other benefits though! The flail attack was an emergent feature from the change, as it naturally came about from the arms being loose and swung around during testing, so we made it into a mechanic!
                     <br />
                     <br />
 
 
                     <h3> Prop Animations & Spawning</h3>
-                    Before working on No Strings Attached, I hadn’t used the animation system in Unity at all. During development, learning it became one of my goals so I could use it for testing. Every project I take on I aim to learn at least one new core skill and I figured this would be something I’d use again in the future. I made simple animations for the props in our scene including, the waves, the birds and the ship sailing past. From learning it for testing, my animations made it into the final build of the game. They weren’t complicated animations at all but it opened up a door to a new skill set.
-                    <br /><br />Here’s a video of the animations, I'm super happy with how they turned out:
-                    <br />
-                    <br />
+                    Before working on No Strings Attached, I hadn’t really used the animation system in Unity. During development, learning it became one of my goals so I could use it for testing. Every project I take on I aim to learn at least one new core skill and I figured this would be something I’d use again in the future. I made simple animations for the props in our scene including, the waves, the birds and the ship sailing past. From learning it for testing, my animations made it into the final build of the game. They weren’t complicated animations at all but it opened up a door to a new skill set.
+
+                    <br /><br />
                     As well as doing the animation, I wrote the script for the props spawning in and disappearing between rounds. It was a pretty simple script as I wrote it not really understanding c# at the time. The script spawned random objects from a list into another list of randomly assigned spawn points, destroying them at the end of rounds. I re-used the logic from this script in my enemy spawner in Beeranged, so it ended up coming in handy!
                     <br />Here’s a video of me testing the prop system during development:
                     <br />
@@ -198,18 +200,22 @@
                     <img src="images/NoStringsAttached/F4.png" alt="1" data-position="center center" style="width:913px;height:462px;">
                     <br />
                     <img src="images/NoStringsAttached/F5.png" alt="1" data-position="center center" style="width:913px;height:462px;">
-                    <br /> <br /> <h3> UI Concepting</h3>
+                    <br /> <br /> <h3> UI </h3>
 
-                    I sketched the initial concepts for most of our UI and how they would be shown to the player. Our whole game took place in one scene, including diegetic UI which reinforces the feeling of the player sitting in the audience of a theatre. We used the stage as the background for all of our menus and showed the info on sign paddles that were raised/lowered. The “cursor” was a spotlight that the player would move around with the joysticks. Here are the UI concepts I presented to the artists and the final results. I want to re-iterate I DID not make the final assets, only the concepts.
+                    I sketched the initial concepts for some of our UI and how they would be shown to the player. Our whole game took place in one scene, including diegetic UI which reinforces the feeling of the player sitting in the audience of a theatre. We used the stage as the background for all of our menus and showed the info on sign paddles that were raised/lowered. The “cursor” was a spotlight that the player would move around with the joysticks. Here are some of the UI concepts I presented to the artists with the final results as well as some general captures of the games final UI. I want to re-iterate I DID not make the final assets, only the concepts.
                     <br />
                     <img src="images/NoStringsAttached/InterUID.png" alt="1" data-position="center center" style="width:913px;height:462px;">
-                    <br /> Intermission UI concept <br /> <br />
+                    <br /> Intermission concept UI<br /> <br />
                     <img src="images/NoStringsAttached/InterUI.png" alt="1" data-position="center center" style="width:913px;height:462px;">
-                    <br /> Intermission UI final <br /> <br />
+                    <br /> Intermission final UI <br /> <br />
                     <img src="images/NoStringsAttached/UIInfoD.png" alt="1" data-position="center center" style="width:913px;height:462px;">
-                    <br /> Tutorial screen concept  <br /> <br />
+                    <br /> Tutorial screen concept UI <br /> <br />
                     <img src="images/NoStringsAttached/UIInfo.png" alt="1" data-position="center center" style="width:913px;height:462px;">
-                    <br /> Tutorial screen final  <br />
+                    <br /> Tutorial menu screen final UI <br /><br />
+                    <img src="images/NoStringsAttached/MenuSS.png" alt="1" data-position="center center" style="width:913px;height:462px;">
+                    <br /> Main menu screen final UI <br /><br />
+                    <img src="images/NoStringsAttached/Credits.png" alt="1" data-position="center center" style="width:913px;height:462px;">
+                    <br /> Credits screen final UI  <br /><br />
                     <br />
                     <h3> Audio & Music</h3>
                     This was my third time working on audio for a project, however, it was my first time in charge of music. The music was a tedious task I worked on throughout the entire project. As none of us had any composing experience, it was up to me to find a soundtrack that would suit our game. This itself was a difficult task because we had to find a completely free-to-use track that fit our gameplay and setting. This task stayed with me right up to the end, and the final song wasn't chosen until a week before the final build. The track we ended up with actually was one of the first tracks I found when looking, so I did learn that sometimes working with what you have is better than looking for something you’ll most probably not find. Along with Josh, both of us edited this soundtrack to make it more fitting to the gameplay and loop seamlessly. I’ve since connected to several composers to avoid running into this situation in the future.
@@ -228,7 +234,7 @@
 
 
 
-                    Our lead programmer created an audio system that allowed us have a pitch range and slightly randomise during gameplay, this was so the sounds wouldn't become too repetitve as it was a fighting game and players would be constantly performing the same actions.I  dabbled in some folly work and used some new plug-ins to create these other sounds, here's some of the other audio I created:
+                    Our lead programmer created an audio system that allowed us have a pitch range and slightly randomise during gameplay, this was so the sounds wouldn't become too repetitve as it was a fighting game and players would be constantly performing the same actions. They were applied to the sounds below. I dabbled in some folly work and used some new plug-ins to create these other sounds:
                     <br /> <br />
                     <audio controls>
                         <source src="images/NoStringsAttached/M2.ogg" type="audio/ogg">
