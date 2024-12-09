@@ -3965,6 +3965,19 @@ body {
 	object-fit: contain; 
 }
 
+.image img {
+	width: 100%;
+	height: auto;
+	max-width: 100%;
+	object-fit: cover; 
+}
+
+@media (max-width: 768px) {
+	.image img {
+		object-fit: contain;
+	}
+}
+
 
 
 
