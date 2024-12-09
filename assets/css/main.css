@@ -3986,6 +3986,75 @@ body {
 
 
 
+.screenshot-gallery {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+	position: relative;
+	max-width: 100%; 
+}
+
+.screenshot-container {
+	overflow: hidden;
+	width: 85%; 
+}
+
+.screenshot-row {
+	display: flex;
+	transition: transform 0.3s ease;
+	gap: 10px;
+}
+
+	.screenshot-row img {
+		width: 300px; 
+		height: auto;
+	
+	}
+
+.scroll-button {
+	background-color: rgba(0, 0, 0, 0.5); 
+	border: none;
+	cursor: pointer;
+	width: 0px; 
+	height: 50px; 
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	z-index: 10;
+	border-radius: 100%; 
+	transition: background-color 0.3s ease; 
+}
+
+	.scroll-button.left {
+		left: 5px;
+	}
+
+	.scroll-button.right {
+		right: 5px;
+	}
+
+	.scroll-button:hover {
+		background-color: rgba(0, 0, 0, 0.8);
+	}
+
+	.scroll-button.left::before {
+		content: '\f104';
+		font-family: 'Font Awesome 5 Free';
+		font-weight: 900;
+		font-size: 20px;
+	}
+
+	.scroll-button.right::before {
+		content: '\f105';
+		font-family: 'Font Awesome 5 Free';
+		font-weight: 900;
+		font-size: 20px;
+	}
+
+
+
 
 
 
