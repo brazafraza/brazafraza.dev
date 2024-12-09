@@ -2,7 +2,7 @@
 <html>
 <head>
     <link rel="icon" type="image/png" href="/images/brazafrazapuppet1.png">
-    <title>Brodie Frazier</title>
+    <title>No Strings Attached</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
@@ -75,12 +75,24 @@
                     No Strings Attached is a 2 player slapstick fighting game for Windows with absurd and brutal combat. Pick your puppet and puppeteer them to victory as you dominate the stage as the best of three wins. Destroy your opponent and snap their strings by swinging, flopping, and flailing as hard as you can!<br />
                     You thought this was your ordinary puppet show, but something’s wrong! The puppets aren’t singing or dancing… They’re fighting!<br /><br />
 
+                    <div class="screenshot-gallery">
+                        <button class="scroll-button left" onclick="scrollGallery(-1)"></button>
+                        <div class="screenshot-container">
+                            <div class="screenshot-row">
+                                
+                                <img src="images/NoStringsAttached/Game1.png" alt="Draft" data-position="center center" style="width:600px;height:325px;">
+                                <img src="images/NoStringsAttached/Game2.png" alt="Draft" data-position="center center" style="width:600px;height:325px;"><br />
+                                <img src="images/NoStringsAttached/Game3.png" alt="Draft" data-position="center center" style="width:600px;height:325px;">
+                                <img src="images/NoStringsAttached/Game4.png" alt="Draft" data-position="center center" style="width:600px;height:325px;"><br />
+                            </div>
+                        </div>
+                        <button class="scroll-button right" onclick="scrollGallery(1)"></button>
+                    </div>
 
                     <h3>Brief creation</h3>
                     This was a student-led project that ran over six weeks, with teams randomly assigned from our cohort. We had a team of three designers, five artists, and three programmers (a total of eleven of us). After pitching game ideas, our group chose my puppet-fighting concept.<br /><br />
 
-                    This was the initial pitch document that laid the foundation for our game:<br />
-                    <br /><img src="images/NoStringsAttached/Pitch.png" alt="1" data-position="center center" style="width:786px;height:846px;">
+              
 
                     <br /><br />As no formal brief was assigned to us, we worked based on this rough pitch document and created the game design doc. I wrote up the majority of this document to solidify the vision of the game:<br />
                     <br />
@@ -116,7 +128,7 @@
                     <ul>
                         <li>The player had strings attached to their head and both arms.</li>
                         <li>The player’s head string would only become reachable after both arm strings were gone.</li>
-                
+
                         <li> The player had two stances, high and low.</li>
                         <li> If a player lost their head string, they would die.</li>
                         <li> The player could punch and block with either arm, in both stances.</li>
@@ -326,33 +338,31 @@
                 </ul>
             </div>
         </section>
-       
+
         <!-- Projects Section -->
         <!--<section id="one" class="wrapper style2 spotlights">-->
+        <!-- Project 1 -->
+        <!--<section class="project-section">
+            <a href="beerangedDL1.html" class="image" target="_blank">
+                <img src="images/pic05.jpg" alt="Project Image" data-position="center center" />
+            </a>
+            <div class="content">
+                <div class="inner">
+                    <h2>
+                        #1 - Introducing Beeranged and the future!
+                        <h3>13/11/2024 <br></h3>
 
-            <!-- Project 1 -->
-            <!--<section class="project-section">
-                <a href="beerangedDL1.html" class="image" target="_blank">
-                    <img src="images/pic05.jpg" alt="Project Image" data-position="center center" />
-                </a>
-                <div class="content">
-                    <div class="inner">
-                        <h2>
-                            #1 - Introducing Beeranged and the future!
-                            <h3>13/11/2024 <br></h3>
+                        <ul class="actions">
+                            <li><a href="beerangedDL1.html" class="button" target="_blank">view</a></li>
 
-                            <ul class="actions">
-                                <li><a href="beerangedDL1.html" class="button" target="_blank">view</a></li>
-
-                            </ul>
-                    </div>
+                        </ul>
                 </div>
-            </section>
+            </div>
+        </section>
 
 
 
-        </section>-->
-
+    </section>-->
         <!-- Footer -->
         <footer id="footer" class="wrapper style1-alt">
             <div class="inner">
@@ -378,7 +388,7 @@
             document.addEventListener('DOMContentLoaded', function () {
                 const mainImage = document.getElementById('mainImage');
                 const imageOptions = [
-                 
+
                     '/images/brazafrazapuppet1.png',
                     '/images/brazafrazapuppet2.png'
 
@@ -397,6 +407,22 @@
         </script>
 
 
+        <!-- Screenshots -->
+        <script>
+            let scrollPosition = 0;
+
+            function scrollGallery(direction) {
+                const container = document.querySelector('.screenshot-row');
+                const scrollAmount = 300;
+                const maxScroll = container.scrollWidth - container.offsetWidth;
+
+                scrollPosition += direction * scrollAmount;
+                if (scrollPosition < 0) scrollPosition = 0;
+                if (scrollPosition > maxScroll) scrollPosition = maxScroll;
+
+                container.style.transform = `translateX(-${scrollPosition}px)`;
+            }
+        </script>
 
 
 

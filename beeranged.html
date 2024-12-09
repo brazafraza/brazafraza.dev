@@ -2,7 +2,7 @@
 <html>
 <head>
     <link rel="icon" type="image/png" href="/images/brazafrazabeeranged.png">
-    <title>Brodie Frazier</title>
+    <title>Beeranged</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
@@ -68,11 +68,33 @@
                     Genre: 2D Shooter, Survivor-like <br>
                     Engine: Unity <br>
                     Platform: PC <br>
-                    
+
                 </h3>
                 <p>
                     <br>Upgrade your player by defeating bees and levelling up. Pick the upgrades that suit you! Can you make it to the end and defeat the queen bee?
 
+                    <div class="screenshot-gallery">
+                        <button class="scroll-button left" onclick="scrollGallery(-1)"></button>
+                        <div class="screenshot-container">
+                            <div class="screenshot-row">
+                                <div class="video-container">
+                                    <iframe width="560"
+                                            height="315"
+                                            src="https://www.youtube.com/embed/CMVpsRy6b8w"
+                                            title="YouTube video player"
+                                            frameborder="0"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                            allowfullscreen>
+                                    </iframe>
+                                </div>
+                                <img src="images/Beeranged/Game1.png" alt="Draft" data-position="center center" style="width:600px;height:325px;">
+                                <img src="images/Beeranged/Game2.png" alt="Draft" data-position="center center" style="width:600px;height:325px;"><br />
+                                <img src="images/Beeranged/Game3.png" alt="Draft" data-position="center center" style="width:600px;height:325px;">
+                                <img src="images/Beeranged/Game4.png" alt="Draft" data-position="center center" style="width:600px;height:325px;"><br />
+                            </div>
+                        </div>
+                        <button class="scroll-button right" onclick="scrollGallery(1)"></button>
+                    </div>
 
                     <br>
                     <h3>Overview</h3>
@@ -178,7 +200,7 @@
                 </ul>
             </div>
         </section>
-       
+
         <!-- Projects Section -->
         <section id="one" class="wrapper style2 spotlights">
 
@@ -230,7 +252,7 @@
             document.addEventListener('DOMContentLoaded', function () {
                 const mainImage = document.getElementById('mainImage');
                 const imageOptions = [
-                 
+
                     '/images/brazafrazabeeranged.png'
 
                 ];
@@ -248,6 +270,22 @@
         </script>
 
 
+        <!-- Screenshots -->
+        <script>
+            let scrollPosition = 0;
+
+            function scrollGallery(direction) {
+                const container = document.querySelector('.screenshot-row');
+                const scrollAmount = 300;
+                const maxScroll = container.scrollWidth - container.offsetWidth;
+
+                scrollPosition += direction * scrollAmount;
+                if (scrollPosition < 0) scrollPosition = 0;
+                if (scrollPosition > maxScroll) scrollPosition = maxScroll;
+
+                container.style.transform = `translateX(-${scrollPosition}px)`;
+            }
+        </script>
 
 
 
