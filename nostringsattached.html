@@ -52,18 +52,21 @@
 						No Strings Attached is a 2 player slapstick fighting game for Windows with absurd and brutal combat. Pick your puppet and puppeteer them to victory as you dominate the stage as the best of three wins. Destroy your opponent and snap their strings by swinging, flopping, and flailing as hard as you can!<br />
 						You thought this was your ordinary puppet show, but something’s wrong! The puppets aren’t singing or dancing… They’re fighting!<br /><br />
 
-						<div class="screenshot-gallery">
-							<button class="scroll-button left" onclick="scrollGallery(-1)"></button>
+						<div class="screenshot-gallery" data-gallery="1">
+							<button class="scroll-button left" onclick="scrollGallery(-1, 1)"></button>
 							<div class="screenshot-container">
 								<div class="screenshot-row">
+									<img src="images/NoStringsAttached/Game1.png" 																																						 <img src="images/FinalHour/Game3.png" alt="Draft" data-position="center center" style="width:600px;height:325px;">
 
-									<img src="images/NoStringsAttached/Game1.png" alt="Draft" data-position="center center" style="width:600px;height:325px;">
-									<img src="images/NoStringsAttached/Game2.png" alt="Draft" data-position="center center" style="width:600px;height:325px;"><br />
-									<img src="images/NoStringsAttached/Game3.png" alt="Draft" data-position="center center" style="width:600px;height:325px;">
-									<img src="images/NoStringsAttached/Game4.png" alt="Draft" data-position="center center" style="width:600px;height:325px;"><br />
+									<img src="images/NoStringsAttached/Game2.png" 																																						 <img src="images/FinalHour/Game3.png" alt="Draft" data-position="center center" style="width:600px;height:325px;">
+<br />
+									<img src="images/NoStringsAttached/Game3.png" 																																						 <img src="images/FinalHour/Game3.png" alt="Draft" data-position="center center" style="width:600px;height:325px;">
+>
+									<img src="images/NoStringsAttached/Game4.png" 																																						 <img src="images/FinalHour/Game3.png" alt="Draft" data-position="center center" style="width:600px;height:325px;">
+<br />
 								</div>
 							</div>
-							<button class="scroll-button right" onclick="scrollGallery(1)"></button>
+							<button class="scroll-button right" onclick="scrollGallery(1, 1)"></button>
 						</div><br />
 						<section>
 							<h3>Brief creation</h3>
@@ -73,9 +76,6 @@
 								We had a team of three designers, five artists, and three programmers (a total of eleven of us). After pitching game ideas, our group chose my puppet-fighting concept.<br /><br />
 
 
-
-								<br /><br />As no formal brief was assigned to us, we worked based on this rough pitch document and created the game design doc. I wrote up the majority of this document to solidify the vision of the game:<br />
-								<br />
 								<ul class="actions">
 									<li><a href="images/NoStringsAttached/NSA_GDD.pdf" class="button">Open GDD here!</a></li>
 								</ul>
@@ -103,12 +103,12 @@
 								I had no experience in a production role before so this was my first time managing a team. I used the project management software Hack n Plan to outline and track the team's tasks. Each morning we would have a morning stand-up where I recorded what people had been working on and what everybody would be working on in a shared document. This ensured we all had a more informal way to communicate tasks progression beyond Hack n Plan. The project management worked out well and by the end of each Alpha, Beta and Gold, most of the assigned tasks were completed. Tasks that were incomplete were communicated clearly and reassigned to different stages or people in the team.<br /><br />
 
 								Here are some example screenshots of how the asset list and scope timeline were set out:
-								<br /><img src="images/NoStringsAttached/Scope1.png" alt="1" data-position="center center" style="width:1073px;height:458px;"><br /> Day to day stand up snippet<br />
+								<br /><img src="images/NoStringsAttached/Scope1.png" alt="Draft" class="responsive-image"><br /> Day to day stand up snippet<br />
 
-								<br /><img src="images/NoStringsAttached/Scope4.png" alt="1" data-position="center center" style="width:900px;height:474px;"><br /> Hack n Plan snippet 1<br />
-								<br /><img src="images/NoStringsAttached/Scope5.png" alt="1" data-position="center center" style="width:900px;height:474px;"><br /> Hack n Plan snippet 2<br />
-								<br /><img src="images/NoStringsAttached/Scope2.png" alt="1" data-position="center center" style="width:1158px;height:474px;"><br /> Alpha asset list (Hour delegation)<br />
-								<br /><img src="images/NoStringsAttached/Scope3.png" alt="1" data-position="center center" style="width:1073px;height:458px;"><br />
+								<br /><img src="images/NoStringsAttached/Scope4.png" alt="Draft" class="responsive-image"><br /> Hack n Plan example<br />
+
+								<br /><img src="images/NoStringsAttached/Scope2.png" alt="Draft" class="responsive-image"> Alpha asset list (Hour delegation)<br />
+								<br /><img src="images/NoStringsAttached/Scope3.png" alt="Draft" class="responsive-image">
 								Arist asset list
 								<br />
 
@@ -187,7 +187,7 @@
 								As well as doing the animation, I wrote the script for the props spawning in and disappearing between rounds. It was a pretty simple script as I wrote it not really understanding c# at the time. The script spawned random objects from a list into another list of randomly assigned spawn points, destroying them at the end of rounds. I re-used the logic from this script in my enemy spawner in Beeranged, so it ended up coming in handy!
 								<br />Here’s a video of me testing the prop system during development:
 								<br />
-								<img src="images/NoStringsAttached/Animations.gif" alt="1" data-position="center center" style="width:913px;height:462px;">
+								<img src="images/NoStringsAttached/Animations.gif" alt="Draft" class="responsive-image">
 								<br />
 								<br />
 
@@ -205,25 +205,43 @@
 
 								<br /> Here's some screenshots from greyboxing behind the scenes!
 								<br />
-								<img src="images/NoStringsAttached/GB1.png" alt="1" data-position="center center" style="width:913px;height:462px;">
-								<br />
-								<img src="images/NoStringsAttached/GB2.png" alt="1" data-position="center center" style="width:913px;height:462px;">
-								<br />
-								<img src="images/NoStringsAttached/GB3.png" alt="1" data-position="center center" style="width:913px;height:462px;">
-								<br />
-								<img src="images/NoStringsAttached/GB4.png" alt="1" data-position="center center" style="width:913px;height:462px;">
+								<div class="screenshot-gallery" data-gallery="2">
+									<button class="scroll-button left" onclick="scrollGallery(-1, 2)"></button>
+									<div class="screenshot-container">
+										<div class="screenshot-row">
+											
+											<img src="images/NoStringsAttached/GB1.png" alt="Draft" class="responsive-image">
+											<br />
+											<img src="images/NoStringsAttached/GB2.png" alt="Draft" class="responsive-image">
+											<br />
+											<img src="images/NoStringsAttached/GB3.png" alt="Draft" class="responsive-image">
+											<br />
+											<img src="images/NoStringsAttached/GB4.png" alt="Draft" class="responsive-image">
+										</div>
+									</div>
+									<button class="scroll-button right" onclick="scrollGallery(1, 2)"></button>
+								</div><br />
+								
 								<br />
 								<br />Here's some screenshots from the final build behind the scenes!
 								<br />
-								<img src="images/NoStringsAttached/F1.png" alt="1" data-position="center center" style="width:913px;height:462px;">
-								<br />
-								<img src="images/NoStringsAttached/F2.png" alt="1" data-position="center center" style="width:913px;height:462px;">
-								<br />
-								<img src="images/NoStringsAttached/F3.png" alt="1" data-position="center center" style="width:913px;height:462px;">
-								<br />
-								<img src="images/NoStringsAttached/F4.png" alt="1" data-position="center center" style="width:913px;height:462px;">
-								<br />
-								<img src="images/NoStringsAttached/F5.png" alt="1" data-position="center center" style="width:913px;height:462px;">
+								<div class="screenshot-gallery" data-gallery="3">
+									<button class="scroll-button left" onclick="scrollGallery(-1, 3)"></button>
+									<div class="screenshot-container">
+										<div class="screenshot-row">
+											<img src="images/NoStringsAttached/F1.png" alt="Draft" class="responsive-image">
+											<br />
+											<img src="images/NoStringsAttached/F2.png" alt="Draft" class="responsive-image">
+											<br />
+											<img src="images/NoStringsAttached/F3.png" alt="Draft" class="responsive-image">
+											
+											<br />
+											<img src="images/NoStringsAttached/F5.png" alt="Draft" class="responsive-image">
+										</div>
+									</div>
+									<button class="scroll-button right" onclick="scrollGallery(1, 3)"></button>
+								</div><br />
+								
 
 
 							</details>
@@ -236,17 +254,17 @@
 
 								Our whole game took place in one scene, including diegetic UI which reinforces the feeling of the player sitting in the audience of a theatre. We used the stage as the background for all of our menus and showed the info on sign paddles that were raised/lowered. The “cursor” was a spotlight that the player would move around with the joysticks. Here are some of the UI concepts I presented to the artists with the final results as well as some general captures of the games final UI. I want to re-iterate I DID not make the final assets, only the concepts.
 								<br />
-								<img src="images/NoStringsAttached/InterUID.png" alt="1" data-position="center center" style="width:913px;height:462px;">
+								<img src="images/NoStringsAttached/InterUID.png" alt="Draft" class="responsive-image">
 								<br /> Intermission concept UI<br /> <br />
-								<img src="images/NoStringsAttached/InterUI.png" alt="1" data-position="center center" style="width:913px;height:462px;">
+								<img src="images/NoStringsAttached/InterUI.png" alt="Draft" class="responsive-image">
 								<br /> Intermission final UI <br /> <br />
-								<img src="images/NoStringsAttached/UIInfoD.png" alt="1" data-position="center center" style="width:913px;height:462px;">
+								<img src="images/NoStringsAttached/UIInfoD.png" alt="Draft" class="responsive-image">
 								<br /> Tutorial screen concept UI <br /> <br />
-								<img src="images/NoStringsAttached/UIInfo.png" alt="1" data-position="center center" style="width:913px;height:462px;">
+								<img src="images/NoStringsAttached/UIInfo.png" alt="Draft" class="responsive-image">
 								<br /> Tutorial menu screen final UI <br /><br />
-								<img src="images/NoStringsAttached/MenuSS.png" alt="1" data-position="center center" style="width:913px;height:462px;">
+								<img src="images/NoStringsAttached/MenuSS.png" alt="Draft" class="responsive-image">
 								<br /> Main menu screen final UI <br /><br />
-								<img src="images/NoStringsAttached/Credits.png" alt="1" data-position="center center" style="width:913px;height:462px;">
+								<img src="images/NoStringsAttached/Credits.png" alt="Draft" class="responsive-image">
 								<br /> Credits screen final UI  <br /><br />
 								<br />
 
@@ -431,19 +449,40 @@
 
 		<!-- Screenshots -->
 		<script>
-			let scrollPosition = 0;
+            let scrollPositions = {};
 
-			function scrollGallery(direction) {
-				const container = document.querySelector('.screenshot-row');
-				const scrollAmount = 300;
-				const maxScroll = container.scrollWidth - container.offsetWidth;
+            function scrollGallery(direction, galleryId) {
+                const gallery = document.querySelector(`.screenshot-gallery[data-gallery="${galleryId}"]`);
+                const container = gallery.querySelector('.screenshot-container');
+                const row = gallery.querySelector('.screenshot-row');
+                const scrollAmount = 300;
 
-				scrollPosition += direction * scrollAmount;
-				if (scrollPosition < 0) scrollPosition = 0;
-				if (scrollPosition > maxScroll) scrollPosition = maxScroll;
+                if (!row || !container) {
+                    console.error(`Gallery with ID ${galleryId} does not have the required elements.`);
+                    return;
+                }
 
-				container.style.transform = `translateX(-${scrollPosition}px)`;
-			}
+                const maxScroll = row.scrollWidth - container.offsetWidth;
+
+                // Initialize the scroll position for the gallery if not already set
+                if (!scrollPositions[galleryId]) {
+                    scrollPositions[galleryId] = 0;
+                }
+
+                // Adjust the scroll position
+                scrollPositions[galleryId] += direction * scrollAmount;
+
+                // Prevent scrolling beyond bounds
+                if (scrollPositions[galleryId] < 0) {
+                    scrollPositions[galleryId] = 0;
+                }
+                if (scrollPositions[galleryId] > maxScroll) {
+                    scrollPositions[galleryId] = maxScroll;
+                }
+
+                // Apply the scroll effect
+                row.style.transform = `translateX(-${scrollPositions[galleryId]}px)`;
+            }
 		</script>
 
 

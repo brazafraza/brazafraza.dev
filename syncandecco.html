@@ -47,8 +47,9 @@
 						<br>
 						In this couch co-op experience, work together to overcome enemies and avoid hazards. However you can’t face this task alone, it’s truly a duality of survival.
 
-						<div class="screenshot-gallery">
-							<button class="scroll-button left" onclick="scrollGallery(-1)"></button>
+						
+						<div class="screenshot-gallery" data-gallery="1">
+							<button class="scroll-button left" onclick="scrollGallery(-1, 1)"></button>
 							<div class="screenshot-container">
 								<div class="screenshot-row">
 									<div class="video-container">
@@ -62,13 +63,14 @@
 										</iframe>
 									</div>
 									<img src="images/SyncandEcco/Game1.jpg" alt="Draft" data-position="center center" style="width:600px;height:325px;">
-									<img src="images/SyncandEcco/Game2.jpg" alt="Draft" data-position="center center" style="width:600px;height:325px;"><br />
+									<img src="images/SyncandEcco/Game2.jpg" alt="Draft" data-position="center center" style="width:600px;height:325px;">
 									<img src="images/SyncandEcco/Game3.jpg" alt="Draft" data-position="center center" style="width:600px;height:325px;">
-									<img src="images/SyncandEcco/Game4.jpg" alt="Draft" data-position="center center" style="width:600px;height:325px;"><br />
+									<img src="images/SyncandEcco/Game4.jpg" alt="Draft" data-position="center center" style="width:600px;height:325px;">
 								</div>
 							</div>
-							<button class="scroll-button right" onclick="scrollGallery(1)"></button>
+							<button class="scroll-button right" onclick="scrollGallery(1, 1)"></button>
 						</div>
+
 
 
 						<br>
@@ -77,8 +79,10 @@
 						Find all the relevant documentation for the project below!<br>
 						<br />
 						<ul class="actions">
-							<li><a href="images/SyncandEcco/Brief.pdf" class="button">Brief</a>   
-							<a href="images/SyncandEcco/Pitch.pdf" class="button">Pitch</a>   <a href="images/SyncandEcco/GDD.pdf" class="button">GDD</a>   <a href="images/SyncandEcco/ArtBible.pdf" class="button">Art Bible!</a>   <a href="images/SyncandEcco/TDD.pdf" class="button">TDD</a></li>
+							<li>
+								<a href="images/SyncandEcco/Brief.pdf" class="button">Brief</a>
+								<a href="images/SyncandEcco/Pitch.pdf" class="button">Pitch</a>   <a href="images/SyncandEcco/GDD.pdf" class="button">GDD</a>   <a href="images/SyncandEcco/ArtBible.pdf" class="button">Art Bible!</a>   <a href="images/SyncandEcco/TDD.pdf" class="button">TDD</a>
+							</li>
 						</ul>
 
 						<br>
@@ -122,18 +126,15 @@
 
 								I approached the project by creating a roadmap that outlined our stage milestones and development progressions. During daily stand-ups, we outlined and integrated specific tasks that were recorded in a document and then put into Hack N Plan for task tracking. For the most part this worked well. Towards the end of the project, we introduced whiteboard-based sprint planning. This turned out to be much more effective. I wish we started using whiteboard sprints earlier, as it helped keep everyone on the same page and improved communication and work efficiency significantly.<br><br>
 
-								Here’s some screenshots of how we managed these tasks:<br><br>
+								Here’s some screenshots of how we managed these tasks:<br>
 
-								<img src="images/SyncandEcco/Scope1.png" alt="Gameplay" data-position="center center" style="width:1280px;height:720px;"><br>
+								<img src="images/SyncandEcco/Scope2.png" alt="Draft" class="responsive-image">
+								<img src="images/SyncandEcco/Scope1.png" alt="Draft" class="responsive-image">
 
-								<img src="images/SyncandEcco/Scope2.png" alt="Gameplay" data-position="center center" style="width:1280px;height:720px;"><br>
 
-								<img src="images/SyncandEcco/Scope3.png" alt="Gameplay" data-position="center center" style="width:1280px;height:720px;"><br>
 
-								Here are some of our sprints on the whiteboards:<br>
-								<img src="images/SyncandEcco/WB1.jpg" alt="WB" data-position="center center" style="width:1000px;height:750px;"><br><br>
-								<img src="images/SyncandEcco/WB2.jpg" alt="WB" data-position="center center" style="width: 1000px; height: 750px; "><br><br>
-								<img src="images/SyncandEcco/WB3.jpg" alt="WB" data-position="center center" style="width: 1000px; height: 750px; "><br><br>
+								<img src="images/SyncandEcco/WB1.jpg" alt="Draft" class="responsive-image">
+
 
 
 								<br>
@@ -171,6 +172,9 @@
 									<li>Functional Doors.</li>
 
 									<li>Enemy Spawners.</li>
+									<br /> Enemy directional level flowmap:
+
+									<img src="images/SyncandEcco/Level_1_WarehouseWorries.png" alt="Draft" class="responsive-image">
 
 								</ul>
 
@@ -195,7 +199,7 @@
 								If both players pressed B in unison, it would create a healing field around the players that healed each player over time as long as they were close together.
 
 								It was important to balance the resources for each character, making sure one wasn’t by numbers “easier” to play/manage.<br>
-								<img src="images/SyncandEcco/Resources.png" alt="Resources" data-position="center center" style="width:556px;height:403px;"><br>
+								<img src="images/SyncandEcco/Resources.png" alt="Draft" class="responsive-image"><br>
 
 
 
@@ -204,7 +208,7 @@
 								The Prismatic shot worked as follows: Sync would fully charge their railgun and shoot Ecco. If the shot hit Ecco, the shot would split into several beams and deal a higher amount of damage. <br><br>
 
 								Here’s a clip of it in action:<br>
-								<img src="images/SyncandEcco/Rainbow1.gif" alt="WB" data-position="center center" style="width:1200px;height:720px;"><br><br>
+								<img src="images/SyncandEcco/Rainbow1.gif" alt="Draft" class="responsive-image"><br><br>
 
 								This was received perfectly in playtests, with data showing how satisfying the shot was. This shot became our new focus for the combat, and we based further combat development around trying to make this shot happen. This took a whole lot of balancing, adjusting Eccos's hitbox, adding an extra hitbox just for the shot and adjusting Sync’s shot width.<br><br>
 
@@ -271,8 +275,8 @@
 
 								The prismatic shot was tricky to balance, as we wanted it to be powerful, but not make the game a walk in the park. Originally, the shot dispersed 5 beams at a 70-degree angle. The shot was set up so we could edit this angle, number of beams, damage and pierce count. From feedback, the shot was too hard to hit and wasn't worth the payoff, as yes it annihilated any enemies behind Ecco, but only in a small area. We increased the angle and beam count, until we got 10 beams at 100 degrees. The issue with adding too many beams was, the shot felt way to busy on screen, and after a while, didn’t feel as satisfying to hit.
 								Here’s the original vs the final shot:<br><br>
-								<img src="images/SyncandEcco/Rainbow1.gif" alt="WB" data-position="center center" style="width: 1200px; height: 720px;;"><br><br>
-								<img src="images/SyncandEcco/Rainbow2.gif" alt="WB" data-position="center center" style="width: 1200px; height: 720px;;"><br><br>
+								<img src="images/SyncandEcco/Rainbow1.gif" alt="Draft" class="responsive-image"><br><br>
+								<img src="images/SyncandEcco/Rainbow2.gif" alt="Draft" class="responsive-image"><br><br>
 
 
 
@@ -300,14 +304,14 @@
 
 								After changing to global as we were previously 90% set on local, that's what we had tested with. This meant the Ecco controls once again felt clunky due to different inputs.This was another tedious headache as we had to retest all the movement values.<br>
 								Here’s what Ecco’s alpha movement looked like vs the final build:<br><br>
-								<img src="images/SyncandEcco/EccoMoveOl.gif" alt="WB" data-position="center center" style="width: 1200px; height: 720px;"><br><br>
-								<img src="images/SyncandEcco/EccoMoveNew.gif" alt="WB" data-position="center center" style="width: 1200px; height: 720px;"><br><br>
+								<img src="images/SyncandEcco/EccoMoveOl.gif" alt="Draft" class="responsive-image"><br><br>
+								<img src="images/SyncandEcco/EccoMoveNew.gif" alt="Draft" class="responsive-image"><br><br>
 								Ecco’s controls were finally done, so all that was left was the combat values. We quickly found some values that felt comfortable. The issue we ran into here was Ecco was comfortable as if they were played by themselves (as mentioned before), so when it came to testing with Sync in the equation, Ecco was too powerful. As Sync already felt underpowered, they were even more shadowed by Ecco instantly ploughing through any enemies in their way.<br><br>
 
 								To solve this, we lowered Ecco’s damage values as our original idea for the character and added knockback. This meant Ecco would still damage enemies, however, much less. Ecco would now knock back enemies to line them up for Sync to shoot.<br><br>
 
 								Here’s what Ecco’s looked like final build:<br>
-								<img src="images/SyncandEcco/EccoCOmabt.gif" alt="WB" data-position="center center" style="width: 1200px; height: 720px;"><br><br>
+								<img src="images/SyncandEcco/EccoCOmabt.gif" alt="Draft" class="responsive-image"><br><br>
 
 
 
@@ -333,8 +337,8 @@
 								Something that rippled from our player changes was now the best strategy was to stand still as Ecco and with Sync’s faster shot time, just spam the prismatic shot. We solved this by making enemies faster and more drawn towards Ecco rather than Sync. We added some more enemy spawns so that enemies would spawn slowly in previously cleared rooms and funnel to the player's location. This put a slow but constant pressure on the players, meaning they would have to deal with these stragglers and mess up their campy prismatic shot method.<br><br>
 
 								Here’s what Ecco’s looked like with alpha values vs in the final values:<br>
-								<img src="images/SyncandEcco/EnemiesOld.gif" alt="WB" data-position="center center" style="width: 1200px; height: 720px;"><br><br>
-								<img src="images/SyncandEcco/EnemiesNew.gif" alt="WB" data-position="center center" style="width: 1200px; height: 720px;"><br><br>
+								<img src="images/SyncandEcco/EnemiesOld.gif" alt="Draft" class="responsive-image"><br><br>
+								<img src="images/SyncandEcco/EnemiesNew.gif" alt="Draft" class="responsive-image"><br><br>
 
 
 							</details>
@@ -366,9 +370,9 @@
 								<br><br>
 								Our levels would scale in difficulty in both combat and minor puzzles. I had around twenty levels drafted before level production started. Here are some of my level drafts:<br><br>
 
-								<img src="images/SyncandEcco/Drafts1.png" alt="WB" data-position="center center" style="width:1200px;height:400px;"><br><br>
-								<img src="images/SyncandEcco/Drafts2.png" alt="WB" data-position="center center" style="width:1200px;height:400px;"><br><br>
-								<img src="images/SyncandEcco/Drafts3.png" alt="WB" data-position="center center" style="width:1200px;height:400px;"><br><br>
+								<img src="images/SyncandEcco/Drafts1.png" alt="Draft" class="responsive-image"><br><br>
+								<img src="images/SyncandEcco/Drafts2.png" alt="Draft" class="responsive-image"><br><br>
+								<img src="images/SyncandEcco/Drafts3.png" alt="Draft" class="responsive-image"><br><br>
 								The third image are the sketches I eventually based my two levels on, so keep that in mind when seeing the finished levels below!<br><br>
 
 								When making levels typically, I take an abstract approach of just blobbing down shapes until something sticks. I did this for this project as well, however, I wanted to take an approach to designing my levels more around game mechanics. These were the core principles I based my levels around:<br><br>
@@ -379,34 +383,34 @@
 								These were the core concepts for each level, even though these ideas somewhat fell through the final game to design and gameplay changes, it made them overall more fun to interact with. <br><br>
 
 								This was my first level created, the first level of the game that takes place in a warehouse setting.<br>
-								<img src="images/SyncandEcco/Level14.png" alt="WB" data-position="center center" style="width:960px;height:540px;"><br><br>
+								<img src="images/SyncandEcco/Level14.png" alt="Draft" class="responsive-image"><br><br>
 
 								As this level was the first level, I focused on introducing new mechanics with minimal puzzle elements. Straight away, I introduce the players to 2 mechanics, bollards and pressure plates. The players learn by going over the first plate that Sync can fit through bollards, and activate plates temporarily. They also learn that Ecco can permanently activate the plate here. Players would already know this from playing the tutorial, but I still wanted to simply re-introduce them early in the game for reinforcement.<br><br>
 
 								I tried using these previously mentioned design principles to give both playersan area to shine with their character.<br><br>
 
 								Here is the first version of the level.<br><br>
-								<img src="images/SyncandEcco/Level11.png" alt="WB" data-position="center center" style="width: 960px; height: 540px;"><br><br>
+								<img src="images/SyncandEcco/Level11.png" alt="Draft" class="responsive-image"><br><br>
 								The first version of the level ended up being too small, so I remade it but at almost double the size. Here’s the revised level:<br><br>
-								<img src="images/SyncandEcco/Level12.png" alt="WB" data-position="center center" style=" width:960px; height: 540px;"><br><br>
+								<img src="images/SyncandEcco/Level12.png" alt="Draft" class="responsive-image"><br><br>
 								The second version didn’t flow as nicely as I wanted, so I redesigned the second half of the level slightly, which brought me to the final version which made it into the game:<br><br>
-								<img src="images/SyncandEcco/Level13.png" alt="WB" data-position="center center" style=" width:960px; height: 540px;"><br><br>
+								<img src="images/SyncandEcco/Level13.png" alt="Draft" class="responsive-image"><br><br>
 
 
 								I developed a second level for the office setting, but it didn’t make it into the build due to scope. I took a more puzzley approach on my office level, as it was set later in the game. My puzzle was simple but forced both players to work together by stepping on different pressure plates at the correct times.<br>
 								Here’s the level:<br>
-								<img src="images/SyncandEcco/Level4.png" alt="WB" data-position="center center" style="width:906px;height:926px;"><br><br>
+								<img src="images/SyncandEcco/Level4.png" alt="Draft" class="responsive-image"><br><br>
 
 
 
 								This is the puzzle clearly with the solution:<br>
-								<img src="images/SyncandEcco/Puzzle.png" alt="WB" data-position="center center" style="width:538px;height:586px;"><br><br>
-								<img src="images/SyncandEcco/PuzzleS.png" alt="WB" data-position="center center" style="width: 538px; height: 586px; "><br><br>
+								<img src="images/SyncandEcco/Puzzle.png" alt="Draft" class="responsive-image"><br><br>
+								<img src="images/SyncandEcco/PuzzleS.png" alt="Draft" class="responsive-image"><br><br>
 								As you can see, the level has a circle loop in it. I wanted to create a level that could be replayed differently from the first playthrough. At the start of the level, I would show the players the exit elevator behind a locked set of doors. The players could pick either path (left or right) and play through the level. With the existing bollard mechanics, I used them to block off one side of the map so the players were forced to go the other way. The level made the players go back to the start of the level, being able to now access the elevator.<br><br>
 
 								Here's both paths the player can take to complete the level:<br>
-								<img src="images/SyncandEcco/R1.png" alt="WB" data-position="center center" style="width:746px;height:758px;">
-								<img src="images/SyncandEcco/R2.png" alt="WB" data-position="center center" style="width: 746px; height: 758px; "><br><br>
+								<img src="images/SyncandEcco/R1.png" alt="Draft" class="responsive-image">
+								<img src="images/SyncandEcco/R2.png" alt="Draft" class="responsive-image"><br><br>
 
 
 							</details>
@@ -575,21 +579,40 @@
 		</script>
 
 		<!-- Screenshots -->
-		<script>
-			let scrollPosition = 0;
+		<script>let scrollPositions = {};
 
-			function scrollGallery(direction) {
-				const container = document.querySelector('.screenshot-row');
+			function scrollGallery(direction, galleryId) {
+				const gallery = document.querySelector(`.screenshot-gallery[data-gallery="${galleryId}"]`);
+				const container = gallery.querySelector('.screenshot-container');
+				const row = gallery.querySelector('.screenshot-row');
 				const scrollAmount = 300;
-				const maxScroll = container.scrollWidth - container.offsetWidth;
 
-				scrollPosition += direction * scrollAmount;
-				if (scrollPosition < 0) scrollPosition = 0;
-				if (scrollPosition > maxScroll) scrollPosition = maxScroll;
+				if (!row || !container) {
+					console.error(`Gallery with ID ${galleryId} does not have the required elements.`);
+					return;
+				}
 
-				container.style.transform = `translateX(-${scrollPosition}px)`;
-			}
-		</script>
+				const maxScroll = row.scrollWidth - container.offsetWidth;
+
+				// Initialize the scroll position for the gallery if not already set
+				if (!scrollPositions[galleryId]) {
+					scrollPositions[galleryId] = 0;
+				}
+
+				// Adjust the scroll position
+				scrollPositions[galleryId] += direction * scrollAmount;
+
+				// Prevent scrolling beyond bounds
+				if (scrollPositions[galleryId] < 0) {
+					scrollPositions[galleryId] = 0;
+				}
+				if (scrollPositions[galleryId] > maxScroll) {
+					scrollPositions[galleryId] = maxScroll;
+				}
+
+				// Apply the scroll effect
+				row.style.transform = `translateX(-${scrollPositions[galleryId]}px)`;
+			}</script>
 
 
 
