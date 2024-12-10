@@ -3997,12 +3997,13 @@ body {
 
 .screenshot-container {
 	overflow: hidden;
-	width: 85%; 
+	position: relative;
 }
 
 .screenshot-row {
-	display: flex;
-	transition: transform 0.3s ease;
+	display: flex; 
+	transition: transform 0.3s ease; 
+	will-change: transform;
 	gap: 10px;
 }
 
@@ -4054,6 +4055,12 @@ body {
 	}
 
 
+.responsive-image {
+	max-width: 80%;
+	height: auto;
+	margin: 10px 0;
+	display: block;
+}
 
 
 
