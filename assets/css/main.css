@@ -197,10 +197,10 @@ body {
 		}
 
 			h1.major:after {
-				background-image: -moz-linear-gradient(to right, #5e42a6, #b74e91);
-				background-image: -webkit-linear-gradient(to right, #5e42a6, #b74e91);
-				background-image: -ms-linear-gradient(to right, #5e42a6, #b74e91);
-				background-image: linear-gradient(to right, #5e42a6, #b74e91);
+				background-image: -moz-linear-gradient(to right, #03070c, #b74e91);
+				background-image: -webkit-linear-gradient(to right, #03070c, #b74e91);
+				background-image: -ms-linear-gradient(to right, #03070c, #b74e91);
+				background-image: linear-gradient(to right, #03070c, #b74e91);
 				-moz-transition: max-width 0.2s ease;
 				-webkit-transition: max-width 0.2s ease;
 				-ms-transition: max-width 0.2s ease;
@@ -2535,9 +2535,9 @@ body {
 				font-size: 1.25em;
 			}
 
-				.wrapper.style1 .icon.major:before {
-					color: #5e42a6;
-				}
+.wrapper.style1 .icon.major:before {
+	color: #03070c;
+}
 
 				.wrapper.style1-alt .icon.major:before {
 					color: #493382;
@@ -3366,15 +3366,15 @@ body {
 
 /* Header */
 
-	#header {
-		display: -moz-flex;
-		display: -webkit-flex;
-		display: -ms-flex;
-		display: flex;
-		background-color: #5e42a6;
-		cursor: default;
-		padding: 1.75em 2em;
-	}
+#header {
+	display: -moz-flex;
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: flex;
+	background-color: #03070c;
+	cursor: default;
+	padding: 1.75em 2em;
+}
 
 		#header > .title {
 			border: 0;

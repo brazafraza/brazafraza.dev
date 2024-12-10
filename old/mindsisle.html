@@ -1,0 +1,410 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <link rel="icon" type="image/png" href="/images/brazafrazamindsisle.png">
+    <title>Mind's Isle</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
+    <!-- Custom Hover Effect CSS -->
+    <style>
+        .hover-image {
+            display: inline-block;
+            position: relative;
+            width: 160px;
+            height: 160px;
+        }
+
+            .hover-image img {
+                width: 100%;
+                height: 100%;
+                transition: opacity 0.3s ease;
+            }
+    </style>
+</head>
+<body class="is-preload">
+
+    <!-- Sidebar -->
+    <section id="sidebar">
+        <div class="inner">
+            <nav>
+                <ul>
+                    <li> <a href="index.html" class="home-button">HOME</a></li>
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <li><a href="#intro">The project</a></li>
+                    <li><a href="#one">Devlog coming soon</a></li>
+
+                </ul>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Intro -->
+        <section id="intro" class="wrapper style1 fullscreen fade-up">
+            <div class="inner">
+                <h1>
+                    Mind's Isle
+                    <div class="hover-image" style="float: right;">
+                        <img src="/images/brazafraza.png" alt="Favicon" id="mainImage">
+                    </div>
+                </h1>
+                <h3>
+                    Role: Solo project<br />
+                    Genre: Sandbox, Survival<br />
+                    Engine: Unity<br />
+                    Platform: PC<br />
+
+                </h3>
+
+
+
+                <p>
+
+
+
+                    <h3> Overview</h3>
+                    This was a solo project to create a sandbox-style survival game where the player could explore, set their own goals, and interact with the environment. The brief emphasized the need for a dynamic world that felt alive to the player. I decided to make a game with mechanics such as crafting, player stats, and a day-night cycle. There also needed to be an element of tension to keep the player engaged, so I added a daily (in-game time) quest system that would reward or punish the player depending if they met the requirement or not.
+
+                    <br /> <br />
+                  
+                    <div class="screenshot-gallery">
+                        <button class="scroll-button left" onclick="scrollGallery(-1)"></button>
+                        <div class="screenshot-container">
+                            <div class="screenshot-row">
+                                <div class="video-container">
+                                    <iframe width="560"
+                                            height="315"
+                                            src="https://www.youtube.com/embed/EeZWs403QwA"
+                                            title="YouTube video player"
+                                            frameborder="0"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                            allowfullscreen>
+                                    </iframe>
+                                </div>
+                                <img src="images/MindsIsle/Game1.png" alt="Draft" data-position="center center" style="width:600px;height:325px;">
+                                <img src="images/MindsIsle/Game2.png" alt="Draft" data-position="center center" style="width:600px;height:325px;"><br />
+                                <img src="images/MindsIsle/Game3.png" alt="Draft" data-position="center center" style="width:600px;height:325px;">
+                                <img src="images/MindsIsle/Game4.png" alt="Draft" data-position="center center" style="width:600px;height:325px;"><br />
+                            </div>
+                        </div>
+                        <button class="scroll-button right" onclick="scrollGallery(1)"></button>
+                    </div>
+
+
+
+                    <br /><br />Here's a breakdown of the game's brief, the pitch and a miniture post-mortem:
+                    <br /> <br /><ul class="actions">
+                        <li><a href="images/MindsIsle/Brief.pdf" class="button">Open Pitch here!</a></li>
+                    </ul>
+
+
+                    Check out the Game Design Doc here. <i>Note: This is a prototype game, the yellow highlighted sections of the GDD did not make it into this build.</i><br />
+                    <br /><ul class="actions">
+                        <li><a href="images/MindsIsle/GDD.pdf" class="button">Open GGD here!</a></li>
+                    </ul>
+
+                    <br />
+                    <section>
+                        <h3>Getting Started</h3>
+                        <details>
+                            <summary> Off the bat, I was having regrets about choosing this brief.</summary>
+                            I only had 5 weeks to make an entire survival game by myself which sounded and was absolutely terrifying. I’d always wanted to make a survival game as they’re my favourite genre of game to play. I knew if I truly wanted to make it now was the time so I ignored my doubts and got straight to work.
+
+                            <br /><br />The first thing I did was write down all the systems I wanted in the game:
+
+
+
+                            <ul>
+                                <li>Crafting System</li>
+                                <li>Building System</li>
+                                <li>Melee & Ranged Weapons</li>
+                                <li>Hunger & Health System</li>
+                                <li>Day-Night cycle</li>
+                                <li>Inventroy System</li>
+                                <li>Storage System</li>
+                                <li>Harvesting System</li>
+                                <li>Quest System</li>
+                                <li>Save System</li>
+                                <li>Item System</li>
+
+                            </ul>
+                            Looking back at my list now, it was ambitious but I was determined to make it happen. Here are some of my notes and sketches for the early concepting of the game:
+                            <br />
+                            <img src="images/MindsIsle/Sketch1.png" alt="Draft" data-position="center center" style="width:1120px;height:442px;"><br />
+                            Game initial ideation and systems.<br /><br />
+                            <img src="images/MindsIsle/Sketch2.png" alt="Draft" data-position="center center" style="width:1120px;height:442px;"><br />
+                            Island desgin and lore ideation. <br /><br />
+                            <img src="images/MindsIsle/Sketch3.png" alt="Draft" data-position="center center" style="width:1120px;height:442px;"><br />
+                            Concepts for quest system quests, UI and forge model/<br /><br />
+                            <img src="images/MindsIsle/Sketch4.png" alt="Draft" data-position="center center" style="width:1120px;height:442px;"><br />
+                            Loop ideation, building system and (pseudo) pseduocode.
+
+
+                        </details>
+                    </section>
+                    <br />  <br />
+                    <section>
+                        <h3> Tutorials: Greatest enemy and hero</h3>
+                        <details>
+                            <summary>   To approach this, like any person starting a massive project solo I headed straight to YouTube.</summary>
+                            I made the grave mistake of following 3 different survival game tutorial series, skimming through and trying to bring all the best bits together. This was a huge mistake. I created systems that either didn't work or weren't what I wanted all because I didn’t research the results! This was insanely frustrating as I wasted almost the entire first week, throwing out everything and eventually restarting.
+
+                            <br /><br />  This issue would become more relevant towards the final systems in my game when certain systems wouldn't work together at all. I had to stop relying on finding the correct tutorial and start creating my systems around what I had. I managed to do this by making the quest system completely from scratch and it really boosted my confidence for the rest of the project.
+
+                            <br /><br /> Shoutout to Thunder Dev for this awesome tutorial series, this was my biggest saviour. <a href="https://www.youtube.com/watch?v=Jb4_tebdC1E&list=PL-ChqfOAT7Zi5jWBAWTPPUjTaIxsAH-vb"> Check it out here!</a>
+
+                            <br /><br /> <h3> Scriptable Objects / Inventory System</h3>
+                            I had no idea where to begin for an inventory system. Following tutorials was helping, however, all the videos I found used things called scriptable objects which I had never heard of before. I was stumped when it came to them, and most tutorials I followed that didn’t use them didn't address a lot of the features I wanted as stacking items, picking up items, dragging/dropping items etc. I was committed to learning and understanding the logic in tutorials rather than just blindly following them and after a while, I was able to create a fully working inventory system with the help of the above-mentioned tutorials.
+
+                            <br /><br /> The heart of the system uses scriptable objects to define item data (stack size, max stack, type)
+                            <br /> Here are some of the key features of the system broken down:
+
+                            <ul>
+                                <li>Slot management: Each slot is created using a prefab that can hold items. The slots check their state (full/empty) and update themselves accordingly.</li>
+                                <li>Hotbar management: The system ensures one slot is activated at a time in the Hotbar, and selecting the corresponding key would enable/disable the slots.</li>
+                                <li>Stacking: When picking up an item, the system checks if it already exists in a slot, if it does and can have more items added to it, it will be added. If the item cannot be added, a new slot will be used. If no slots are available, the item will instantiate into a physical in game item and be dropped onto the floor.</li>
+                                <li>Dragging and dropping: Checking if items could be combined, if they could it would combine (using the stacking logic) and if not it would swap the item slots around.</li>
+                                <li>Items, weapons and buildable: A slot was able to determine if an item was a resource, weapon or buildable by reading the item data SO. This would allow the player to hold specific items in their hands.</li>
+
+
+                            </ul>
+                            This system I followed and created was flexible and allowed easy integration for future use. I took it a step further by using them for my crafting system, storage system, gathering system and furnace system! Scriptable objects were one of the most useful things I've ever discovered in c# and this game would be in shambles without them.
+                            <br /><br />
+                            Here's a quick gif showing the functionality:<br />
+                            <img src="images/MindsIsle/Inv.gif" alt="Inventory GIF" data-position="center center" style="width:1280px;height:720px;"><br />
+
+
+                        </details>
+                    </section>
+
+                    <br /><br />
+                    <section>
+                        <h3> Post-Processing </h3>
+                        <details>
+                            <summary> Something really important to me was creating different atmospheres for different areas of the map.</summary>
+
+                            This was my first major 3D Unity game as a solo developer. I had never majorly touched lighting or this thing called “Post-processing.” I spent a good few hours playing around with post-processing profiles and was blown away by the results. I created different profiles to help show the player underwater, in a cave, in the daytime and nighttime. Looking back on it, I'm not sure how I would've created these environments without it.
+
+
+
+                            <img src="images/MindsIsle/pp5.png" alt="Icons1" data-position="center center" style="width:1120px;height:1768px;"><br />
+                            Before & After Post-Processing <br />
+
+                        </details>
+                    </section>
+                    <br /><br />
+
+                    <section>
+                        <h3> Building System Troubles </h3>
+                        <details>
+                            <summary>   I was so excited to jump into this system as it’s always something I’ve loved playing around with in survival games.</summary>
+                            This system I never want to create again, and hopefully, with the scripts I wrote for them, I won't ever have to. I created a building system similar to games like Rust and Ark Survival Evolved. It was functional in the end, but getting there was a nightmare.
+
+                            <br /><br />I scrapped 4 previous systems that I had tried making, being stuck on the first one for 4 days. I threw it all out and restarted, then quickly restarted a second time, a third time, until I  landed on something that worked.
+
+                            <br /><br />Here’s  the system broken down a bit:
+                            <ul>
+                                <li>Preview: When a player equips a building piece, the system generates a preview model that snaps to a grid around the first placed piece.</li>
+                                <li>Placement: The system uses raycasting to check where the piece can be placed. If the piece isn’t clipping through the environment, it appears green (buildable). If it’s invalid, it turns red (non-buildable).</li>
+                                <li>Rotation: Players can rotate the preview by right-clicking, with the rotation snapping in 30-degree increments. This was a small but necessary feature.</li>
+                                <li>Execution: If the placement is valid, the building piece is instantiated in the scene at the preview location on the grid, and the corresponding inventory slot is updated to remove the used item.</li>
+                            </ul>
+
+                            Again, this reinforced my lesson on how much planning matters. I learnt how powerful raycasting is for dynamic world interactions and I feel a lot more confident using it in future projects. Iteration and simplicity are key, as when I restarted from “scratch” I would use the same ideas and concepts just simplifying them and rewriting the code. At the end of it, I’m still not completely happy with the grid system as I still have issues with placing some objects in the terrain when snapping.
+                            <br /><br />
+                            Here's a quick gif showing the functionality:<br />
+                            <img src="images/MindsIsle/Build.gif" alt="Draft" data-position="center center" style="width:1280px;height:720px;"><br />
+
+
+                        </details>
+                    </section>
+
+                    <br /><br />
+                    <section>
+                        <h3> Prefabbing UI Elements</h3>
+                        <details>
+                            <summary> I had little experience working with setting up UI in previous games.</summary>
+                            Buttons that switch or close a scene? Yep. Working settings UI with sliders for FOV, post-processing and graphic options, buttons to save the game, quit the game, inventories for chests and furnaces? Nope. I didn’t necessarily need any of these for the game as it was pretty close to a prototype, however, I was eager to expand my skill set. All the mentioned UI options you probably already guessed, I added them! Setting all up was much smoother than I thought, and Unity has really powerful UI tools that make this all a breeze.
+
+                            <br /><br /> The biggest thing I took from this was creating prefabs for UI elements. This was something I had never considered before and doing it allowed me to create the inventory slots and all the different inventories. I did as it was something i’d picked up from a previous tutorial. Having UI prefabs made it easy to change the size of my player’s inventory, chests and furnaces without having to touch the code at all.
+
+
+
+
+                        </details>
+                    </section>
+
+
+                    <br /><br />
+                    <section>
+                        <h3> New software & Unity asset store</h3>
+                        <details>
+                            <summary>  Here’s where things got extra challenging.</summary>
+                            I didn’t have access to Maya or Photoshop anymore, so I had to learn Blender and Krita. Learning both in one night was intense, but it paid off. Krita wasn’t really a challenge but jumping into Bllender was completely different from Maya. I created all the weapon models in Blender and drew the icons in Krita. Picking up new software is always handy for future use because I always find myself picking up new techniques I can apply in other applications. For example, when watching Blender tutorials I learnt how to use the 3D cursor tool (this is in Maya but I had never used it before) which made making the models so much easier.
+                            <br /><br />
+                            Here are some of the assets I created:<br />
+                            <img src="images/MindsIsle/Icons1.png" alt="Icons1" data-position="center center" style="width:1120px;height:442px;"><br />
+                            Icons for tools (Sword, Picaxe, Hatchet)<br /><br />
+                            <img src="images/MindsIsle/Icons2.png" alt="Icons1" data-position="center center" style="width:1120px;height:442px;"><br />
+                            Icons for buildables (Forge, Storage box, Foundation)<br /><br />
+                            <img src="images/MindsIsle/Icons3.png" alt="Icons1" data-position="center center" style="width:1120px;height:442px;"><br />
+                            Icons for materials (Wood, Stone, Raw metal)<br /><br />
+                            <img src="images/MindsIsle/Icons4.png" alt="Icons1" data-position="center center" style="width:1120px;height:442px;"><br />
+                            Icons for ranged weapons (Bow and Arrows).<br /><br />
+                            <img src="images/MindsIsle/Models.png" alt="Draft" data-position="center center" style="width:800px;height:508px;"><br />
+                            Models for the picaxe, hatchet, sword and Quest Giver in Blender.
+                            <br /><br />  For other assets, I turned to the Unity Asset Store. I’d avoided it in the past because I didn’t want to rely on pre-made assets, but it was necessary with the scope of this project. Another hurdle here was matching styles across assets from different creators. This was an important lesson I learnt early on looking for assets so I was able to make it work. All the assets I used from the asset store were free to use (Standard Unity Asset Store EULA) or I had purchased.
+
+
+
+                        </details>
+                    </section>
+                    <br /><br />
+
+                    <h2> Takeaways</h2>
+                    <details>
+                        <summary> What I learnt on this project.</summary>
+
+                        <h4> Planning is super imporant</h4> Approaching such a big project by yourself can be overwhelming but lots of notetaking, checklists and whiteboard scheduling make a huge difference. Plan everything! Systems, timelines, art, assets, everything! Even if things don’t go exactly to plan, you’ll have a roadmap to keep you moving forward.
+                        <br /><br /> <h4> Tutorials are OP</h4> Watch tutorials right until the end until applying them! Whenever you use tutorials make sure you understand the code, you can’t blindly copy something and expect it to work, especially when working with so many large systems. Tutorials are the best resources ever.
+                        <br /> <br />    <h4> Some systems are just hard!</h4> I learnt a lot from my building system, not only how to create a building system but more importantly sometimes it's easier to restart something and iterate on the idea in a second run.
+                        <br /> <br />                   <h4> Post-Processing is magic</h4> That's it that's the takeaway.
+                        <br /> <br />                   <h4> Asset store isn't scary</h4> I was extremely hesitant to use asset store assets, but with the right license, they’re a lifesaver and timesaver. I also figured out its tricky to match style when using assets from several sources, so I'll keep that in mind when using the asset store in the future.
+                        <br />  <br />                  <h4> New software</h4> Learning both Blender and Krita in one night was very hard but paid off, as it taught me I could learn the basics of programs quite quickly. This meant I was able to whip up some key models that weren't too pretty but got the job done quickly and dirty. Being open to learning new software is a mindset I will
+                        <br />  <br />                 <h4> Directing players</h4> Directing players in an open-world game is hard! This was something I felt I didn’t do very well at. It wasn't a focus during development and that’s why I didn’t address it previously. Most people who played my game couldn’t find the cave, and the quest giver was right next to the player as they spawned which felt a bit boring. If I ever revisit this project, I’d like to focus on designing the world to guide the player to certain points of interest and write a devlog about the iteration of it.
+                        <br />   <br />             <br />     Believe in yourself! Under the right conditions, you can often surprise yourself with how much you can achieve. Creating a survival game in five weeks sounded terrifying at the start and I had so many doubts. Regardless, I kept going. This doesn’t only need to be applied in game development, but this takeaway will be applied to every aspect of my life.
+
+
+
+
+                    </details>
+
+                    <br />
+                    <br />                   Thanks for reading! If you want to download the game or see more of the game check out the itch page below :)
+
+
+
+                </p>
+                <ul class="actions">
+                    <li><a href=" https://brodie-frazier.itch.io/minds-isle" class="button" target="_blank">DOWNLOAD</a></li>
+                </ul>
+            </div>
+        </section>
+        <br /><br />
+
+
+
+
+
+
+
+        <!-- Projects Section -->
+        <!--<section id="one" class="wrapper style2 spotlights">-->
+        <!-- Project 1 -->
+        <!--<section class="project-section">
+            <a href="beerangedDL1.html" class="image" target="_blank">
+                <img src="images/pic05.jpg" alt="Project Image" data-position="center center" />
+            </a>
+            <div class="content">
+                <div class="inner">
+                    <h2>
+                        #1 - Introducing Beeranged and the future!
+                        <h3>13/11/2024 <br></h3>
+
+                        <ul class="actions">
+                            <li><a href="beerangedDL1.html" class="button" target="_blank">view</a></li>
+
+                        </ul>
+                </div>
+            </div>
+        </section>
+
+
+
+    </section>-->
+        <!-- Footer -->
+        <footer id="footer" class="wrapper style1-alt">
+            <div class="inner">
+                <ul class="icons">
+                    <li><a href="https://www.linkedin.com/in/brodie-frazier-a5a384294/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+                    <li><a href="https://github.com/brazafraza" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+                    <li><a href="https://brodie-frazier.itch.io" class="icon brands fa-itch-io"><span class="label">Itch.io</span></a></li>
+                    <li><a href="https://www.youtube.com/@brazafraza" class="icon brands fa-youtube"><span class="label">YouTube</span></a></li>
+                    <li><a href="mailto:brodiefrazier@gmail.com" class="fa fa-envelope" aria-hidden="true"><span class="label">Mail</span></a></li>
+                </ul>
+                <ul class="menu">
+
+                    <li>&copy; BRAZAFRAZA. All rights reserved.</li>
+                    <li>Background: <a href="https://www.deviantart.com/lemmino/art/Cinemagraph-Rainy-Days-475366802">LEMMiNO</a></li>
+                    <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+                </ul>
+            </div>
+        </footer>
+
+        <!-- Scripts -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/jquery.scrollex.min.js"></script>
+        <script src="assets/js/jquery.scrolly.min.js"></script>
+        <script src="assets/js/browser.min.js"></script>
+        <script src="assets/js/breakpoints.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <script src="assets/js/main.js"></script>
+
+        <!-- Custom Hover Effect JavaScript -->
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const mainImage = document.getElementById('mainImage');
+                const imageOptions = [
+
+                    '/images/brazafrazamindsisle.png'
+
+                ];
+
+                mainImage.addEventListener('mouseenter', () => {
+                    const randomImage = imageOptions[Math.floor(Math.random() * imageOptions.length)];
+                    mainImage.dataset.originalSrc = mainImage.src;
+                    mainImage.src = randomImage;
+                });
+
+                mainImage.addEventListener('mouseleave', () => {
+                    mainImage.src = mainImage.dataset.originalSrc;
+                });
+            });
+        </script>
+
+        <!-- Screenshots -->
+        <script>
+            let scrollPosition = 0;
+
+            function scrollGallery(direction) {
+                const container = document.querySelector('.screenshot-row');
+                const scrollAmount = 300;
+                const maxScroll = container.scrollWidth - container.offsetWidth;
+
+                scrollPosition += direction * scrollAmount;
+                if (scrollPosition < 0) scrollPosition = 0;
+                if (scrollPosition > maxScroll) scrollPosition = maxScroll;
+
+                container.style.transform = `translateX(-${scrollPosition}px)`;
+            }
+        </script>
+
+
+
+
+</body>
+</html>

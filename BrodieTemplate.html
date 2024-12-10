@@ -1,0 +1,119 @@
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Sync & Ecco</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+		<header id="header">
+			<a href="index.html" class="title">Brodie Frazier</a>
+			<nav>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+
+				</ul>
+			</nav>
+		</header>
+
+		<!-- Wrapper -->
+		<div id="wrapper">
+
+			<!-- Main -->
+			<section id="intro" class="wrapper style1 fullscreen fade-up">
+				
+						Thanks for reading! If you want to download the game or see more of the game check out the itch page below :)
+
+					</p>
+					<ul class="actions">
+						<li><a href="" class="button" target="_blank">DOWNLOAD</a></li>
+					</ul>
+				</div>
+			</section>
+
+		</div>
+
+		<!-- Footer -->
+		<footer id="footer" class="wrapper style1-alt">
+			<div class="inner">
+				<ul class="menu">
+					<li>&copy; BRAZAFRAZA. All rights reserved.</li>
+					<li>Background: <a href="https://www.deviantart.com/lemmino/art/Cinemagraph-Rainy-Days-475366802">LEMMiNO</a></li>
+
+					<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					<li>
+						
+						<ul class="icons">
+							<li><a href="https://www.linkedin.com/in/brodie-frazier-a5a384294/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+							<li><a href="https://github.com/brazafraza" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+							<li><a href="https://brodie-frazier.itch.io" class="icon brands fa-itch-io"><span class="label">Itch.io</span></a></li>
+							<li><a href="https://www.youtube.com/@brazafraza" class="icon brands fa-youtube"><span class="label">YouTube</span></a></li>
+							<li><a href="mailto:brodiefrazier@gmail.com" class="fa fa-envelope" aria-hidden="true"><span class="label">Mail</span></a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</footer>
+
+		<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+
+		<!-- Custom Hover Effect JavaScript -->
+		<script>
+			document.addEventListener('DOMContentLoaded', function () {
+				const mainImage = document.getElementById('mainImage');
+				const imageOptions = [
+					'/images/brazafrazagear5.png',
+					'/images/brazafrazaflamingo.png',
+					'/images/brazafrazachigo.png'
+
+				];
+
+				mainImage.addEventListener('mouseenter', () => {
+					const randomImage = imageOptions[Math.floor(Math.random() * imageOptions.length)];
+					mainImage.dataset.originalSrc = mainImage.src;
+					mainImage.src = randomImage;
+				});
+
+				mainImage.addEventListener('mouseleave', () => {
+					mainImage.src = mainImage.dataset.originalSrc;
+				});
+			});
+		</script>
+
+		<!-- Screenshots -->
+		<script>
+			let scrollPosition = 0;
+
+			function scrollGallery(direction) {
+				const container = document.querySelector('.screenshot-row');
+				const scrollAmount = 300;
+				const maxScroll = container.scrollWidth - container.offsetWidth;
+
+				scrollPosition += direction * scrollAmount;
+				if (scrollPosition < 0) scrollPosition = 0;
+				if (scrollPosition > maxScroll) scrollPosition = maxScroll;
+
+				container.style.transform = `translateX(-${scrollPosition}px)`;
+			}
+		</script>
+
+
+
+	</body>
+</html>
